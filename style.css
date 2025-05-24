@@ -1,0 +1,58 @@
+ /* variable de color para el modo claro */
+ :root {
+    --bg-color: white;
+    --text-color: black;
+ }
+
+/* Estilos para todo el sitio */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* activar clase dark-theme */
+.dark-theme {
+    --bg-color: #111;
+    --text-color: #eee;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #444;
+    color: white;
+}
+
+/* Contenedor en formato Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem
+}
+
+/* El diseño de las tarjetas*/
+.card {
+    background-color: #f3f3f3;
+    padding:1rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+/*  Aumenta el tamaño cuando pasa el mouse*/
+.card:haver{
+    transform: scala(1.05);
+}
+
+/*  */
+@media(max-width: 600px) {
+    .grip-container {
+        grid-template-columns: 4fr;
+    }
+}
