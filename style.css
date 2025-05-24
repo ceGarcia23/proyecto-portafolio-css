@@ -43,11 +43,13 @@ header {
     padding:1rem;
     border-radius: 8px;
     transition: transform 0.3s;
+    font-weight: bold;
 }
 
 /*  Aumenta el tamaño cuando pasa el mouse*/
 .card:haver{
     transform: scala(1.05);
+    
 }
 
 /*  */
