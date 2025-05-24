@@ -1,0 +1,45 @@
+:root{
+--bg-color: white;
+--text-color: black;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.dark-theme{
+    --bg-color: #111;
+    --text-color: #eee;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #444;
+    color: white;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+/*diseño de las tarjetas*/
+.card{
+    background-color: #f3f3f3;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+/*Diseño responsive*/
+@media (max-width:879px){
+    .grid-container{
+        /*Arreglar esto para que quede responsive*/
+        grid-template-columns: 2fr;
+    }
+}
