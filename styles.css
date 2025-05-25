@@ -1,0 +1,60 @@
+/*variable de color para el modo claro*/
+:root{
+    --bg-color: white;
+    --text-color: black;
+}
+/*Estilo para todo el sitio*/
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*activar clase themeToggle*/
+.themeToggle{
+    background-color: #111;
+    color: #eee;
+    section{
+        color: #555;
+    }
+}
+/*darle estilo al boton*/
+button{
+    padding: 10px 10px;
+}
+/*Estilos para los encabezados*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #444;
+    color: white;
+}
+/*contenedor en formato grid*/
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+/*diseño a la  targeta*/
+.card{
+    background-color: #f3f3f3;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/*aumentar el tamaño cuando pasa el mouse*/
+.card:haver{
+    transform: scala(1.05);
+}
+/*  */
+@media(max-with: 600px){
+    .grid-container{
+    grid-template-columns: 4fr;
+    }
+}
